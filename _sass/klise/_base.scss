@@ -17,22 +17,17 @@
 
 html {
   overflow-x: hidden;
-  overflow-y: hidden;
+  -ms-overflow-style: none;
+  /* for Internet Explorer, Edge */
+  scrollbar-width: none;
+  /* for Firefox */
+  overflow-y: scroll;
   width: 100%;
 }
 
-.container {
-  overflow-y: scroll;
-  scrollbar-width: none;
-  /* Firefox */
-  -ms-overflow-style: none;
-  /* Internet Explorer 10+ */
-}
-
-.container::-webkit-scrollbar {
-  /* WebKit */
-  width: 0;
-  height: 0;
+html::-webkit-scrollbar {
+  display: none;
+  /* for Chrome, Safari, and Opera */
 }
 
 body,
