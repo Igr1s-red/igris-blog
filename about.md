@@ -12,3 +12,4 @@ Hey there! I'm Igris, a security engineer diving deep into Linux and hardware se
 
 - {{ site.author.email }}
 - github.com/{{ site.author.github }}
+- Discord : {{site.author.discord}}
